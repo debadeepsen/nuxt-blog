@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Inconsolata&display=swap");
+
+.article {
+  padding: 20px 50px;
+  margin: 40px auto;
+  font-family: "Manrope", Tahoma, Geneva, Verdana, sans-serif;
+  width: 80%;
+  box-shadow: 2px 2px 8px #3333;
+}
+
+blockquote {
+  border-left: 2px solid #3336;
+  background: #eeee;
+  padding: 20px 30px;
+  margin-left: 0px;
+  width: auto;
+}
+
+code {
+  font-family: "Inconsolata";
+}
