@@ -2,7 +2,13 @@
   <div class="article">
     <ul>
       <li v-for="article in list" :key="article.slug">
-        <nuxt-link :to="article.slug">
+        <nuxt-link
+          :to="
+            process.env.NODE_ENV === 'development'
+              ? article.slug
+              : 'http://localhost/nuxtblog/' + article.slug
+          "
+        >
           {{ article.title }}
         </nuxt-link>
       </li>
@@ -37,5 +43,4 @@ export default {
 </script>
 
 <style>
-
 </style>
